@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #mem_form{
+            width:700px;
+            margin-left:20px;
+            font-family:'sans-serif';
+            font-size:12px;
+            color: #888;
+            padding-top:5px;
+        }
+
+        .header{
+            display:flex;
+            align-items: center;
+            width:700px;
+            height:25px;
+            margin-top:10px;
+            margin-left:20px;
+            border-bottom: 2px solid #1b894d;
+            font-size: 15px;
+        }
+
+        .row{
+            display:flex;
+            border-bottom: 1px solid black;
+            align-items: center;
+            height:30px;
+            margin-left:20px;
+        }
+
+        .row > div:first-child{
+            width:120px;
+            text-align: end;
+            margin-right: 10px;
+        }
+
+        .row > div:nth-child(2){
+            margin-left: 10px;
+        }
+        .buttons{
+            display:flex;
+            justify-content: center;
+            margin-top:20px;
+        }
+        .buttons > button {
+            display:flex;
+            align-items: center;
+            margin:10px;
+        }
+
+    </style>
+</head>
+<body>
+    <form id="mem_form">
+        <div class="header"> <!-- 회원가입정보 -->
+            <img src="blue_list.png" alt="">
+            <p>회원가입 정보</p>
+        </div>
+        <div class="row"> <!-- 아이디 행 -->
+            <div>아이디</div>
+            <div>
+                <input type="text">
+                <button>중복확인</button>
+                영문 숫자 조합으로 4~12자 이내
+            </div>
+        </div>
+        <div class="row"> <!-- 비밀번호 행 -->
+            <div>비밀번호</div>
+            <div>
+                <input type="text">
+                영문 숫자 조합으로 4~12자 이내
+            </div>
+        </div>
+        <div class="row"> <!-- 비밀번호 확인 행 -->
+            <div>비밀번호 확인</div>
+            <div><input type="text"></div>
+        </div>
+        <div class="row"> <!-- 이름 행 -->
+            <div>이름</div>
+            <div><input type="text"></div>
+        </div>
+        <div class="row"> <!-- 생년월일 행 -->
+            <div>생년월일</div>
+            <div>
+                <input type="text" style="width:40px"> 년&nbsp; 
+                <input type="text" style="width:20px"> 월&nbsp; 
+                <input type="text" style="width:20px"> 일&nbsp; 
+                <input type="radio" name="yeartype">음력
+                <input type="radio" name="yeartype">양력
+            </div>
+        </div>
+        <div class="row"> <!-- 이메일 행 -->
+            <div>이메일</div>
+            <div><input type="email"></div>
+        </div>
+        <div class="row"> <!-- 휴대전화 행 -->
+            <div>휴대전화</div>
+            <div>
+                <input type="text" style="width:30px"> -
+                <input type="text" style="width:40px"> -
+                <input type="text" style="width:40px">
+            </div>
+        </div>
+        <div class="row"> <!-- 직업 행 -->
+            <div>직업</div>
+            <div>
+                <select name="job">
+                    <option value="1" selected>직업선택</option>
+                    <option value="2">경찰</option>
+                    <option value="3">도둑</option>
+                </select>
+            </div>
+        </div>
+        <div class="row"> <!-- 영어수강목적 행 -->
+            <div>영어수강목적</div>
+            <div>
+                <input type="radio" name="objective">시험대비
+                <input type="radio" name="objective">업무상
+                <input type="radio" name="objective">취미
+                <input type="radio" name="objective">기타
+            </div>
+        </div>
+        <div class="buttons"> <!-- 버튼 행 -->
+            <!-- <input type="reset" value="가입취소">
+            <input type="submit" value="가입완료"> -->
+            <button><img src="login_button.png" alt="">가입 취소</button>
+            <button><img src="login_button.png" alt="">가입 완료</button>
+        </div>
+    </form>
+</body>
+</html>
+
