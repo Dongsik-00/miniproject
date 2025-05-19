@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h1{
+            font-family: '맑은 고딕';
+            margin : 10px;
+            padding-bottom: 6px;
+            border-bottom: 2px solid #aaaaaa;
+        }
+        hr {
+            margin:10px;
+            border: 1px solid #cccccc;
+        }
+        .list_item {
+            display:flex;
+            margin:10px;
+            padding:10px;
+        }
+        .list_item > hr {
+            margin: 10px;
+            border: 1px solid #cccccc;
+        }
+        .image {
+            height: 150px;
+            width: 150px;
+        }
+        .image img {
+            height: 100%;
+            width: 100%;
+        }
+        .intro {
+            width: 300px;
+            margin-left:20px;
+        }
+        .price {
+            width: 150px;
+        }
+        .price p{
+            margin:0;
+        }
+        .price p:first-child{
+            color:#e25147;
+            font-weight: bold;
+        }
+        .price p:nth-child(2){
+            font-size: 12px;
+            margin-top: 5px;
+        }
+        .company{
+            width: 90px;
+        }
+        .hit{
+            width:90px;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>씨앗 판매</h1>
+
+    <div class="list_item">
+        <div class="image"> <!-- 이미지 -->
+            <img src="geumgaegook.jpg" alt="금계국">
+        </div>
+        <div class="intro"> <!-- 상품 설명 박스 -->
+            [봄빛정원] 금계국/취미/선물/야생화
+        </div>
+        <div class="price"> <!-- 상품 가격 박스 -->
+            <p>3,000원</p>
+            <p>배송비 2,500원</p>
+        </div>
+        <div class="company"> <!-- 제조 회사 박스 -->
+            봄빛정원
+        </div>
+        <div class="hit"> <!-- 조회수 박스 -->
+            조회 300
+        </div>
+    </div>
+    <hr>
+    
+    <div class="list_item">
+        <div class="image"> <!-- 이미지 -->
+            <img src="cosmos.jpg" alt="금계국">
+        </div>
+        <div class="intro"> <!-- 상품 설명 박스 -->
+            [봄빛정원] 코스모스/취미/선물/야생화
+        </div>
+        <div class="price"> <!-- 상품 가격 박스 -->
+            <p>2,000원</p>
+            <p>배송비 2,500원</p>
+        </div>
+        <div class="company"> <!-- 제조 회사 박스 -->
+            봄빛정원
+        </div>
+        <div class="hit"> <!-- 조회수 박스 -->
+            조회 300
+        </div>
+    </div> 
+    <hr>   
+</body>
+</html>
